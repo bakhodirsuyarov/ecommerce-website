@@ -1,0 +1,133 @@
+/* GRID */
+.grid-card{
+  flex-grow: 1;
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 16px;
+  margin-left: 32px;
+  margin-bottom: 48px;
+  position: relative;
+  width: calc(100% / 3 - 32px);
+}
+
+.grid-card:nth-child(3){
+  margin-right: 0;
+}
+
+.grid-card__img{
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+}
+
+.grid-card__span{
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+  left: 10%;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background: #F4F8EC;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.grid-card__title{
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.grid-card__description{
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.grid-card__price-span{
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-card__price{
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin: 0;
+}
+
+.grid-card__number{
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #A9A9A9;
+}
+
+.grid-card__button{
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #6A983C;
+  border: 2px solid #46760A;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 6px 12px;
+}
+
+/* MEDIA */
+
+@include breakpoint-down (855px) {
+
+  .grid-card{
+    width: calc(100% / 2 - 50px);
+  }
+}
+
+@include breakpoint-down (693px) {
+
+  .grid-card{
+    margin-left: 15px;
+  }
+}
+
+@include breakpoint-down (660px) {
+
+  .grid-card{
+    margin-left: 5px;
+  }
+}
+
+@include breakpoint-down (650px) {
+  .grid-card{
+    width: calc(100% / 2 - 50px);
+  }
+}
+
+@include breakpoint-down (585px) {
+  .grid-card{
+    width: 100%;
+  }
+}
+

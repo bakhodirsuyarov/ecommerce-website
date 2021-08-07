@@ -1,0 +1,28 @@
+/* TABLE */
+.table-body{
+  display: flex;
+}
+
+.table-list{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.table-list:not(:last-child){
+  margin-right: 32px;
+}
+
+.table-item{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
+.table-item:not(:last-child){
+  margin-bottom: 8px;
+}
+

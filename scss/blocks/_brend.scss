@@ -1,3 +1,37 @@
 .brend-label{
   display: block;
+  padding-left: 30px;
+}
+
+.brend-label:not(:last-child){
+  margin-bottom: 12px;
+}
+
+.brend-title{
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.brend-input{
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.brend-span{
+  position: absolute;
+  margin-left: -30px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/icon/checkbox-off.svg");
+}
+
+.brend-input:checked + .brend-span{
+  background-image: url("../../img/icon/checkbox-on.svg");
 }

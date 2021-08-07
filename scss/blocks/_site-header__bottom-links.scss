@@ -3,3 +3,11 @@
   padding-right: 45px;
   display: flex;
 }
+
+@include breakpoint-down (430px) {
+
+  .site-header__bottom-links{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

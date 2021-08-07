@@ -15,7 +15,7 @@
   background: #F4F8EC;
   border-radius: 12px;
   padding-left: 8px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .content-selected__text{
@@ -42,5 +42,33 @@
 
 .content-selected--close{
   display: none;
+}
+
+@include breakpoint-down (465px) {
+
+  .content-title{
+    margin-bottom: 10px;
+  }
+
+  .content-selected:not(:last-child){
+    margin-right: 0px;
+  }
+
+  .content-selected{
+    margin-bottom: 10px;
+  }
+}
+
+@include breakpoint-down (430px) {
+
+  .site-header__main{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .site-header__bottom-links{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
