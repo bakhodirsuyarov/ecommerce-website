@@ -63,3 +63,9 @@
   line-height: 16px;
   color: #A9A9A9;
 }
+
+@include breakpoint-down (520px) {
+  .main-bottom{
+    flex-direction: column;
+  }
+}

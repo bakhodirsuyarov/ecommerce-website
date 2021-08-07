@@ -3276,6 +3276,15 @@ main {
   color: #A9A9A9;
 }
 
+@media only screen and (max-width: 520px) {
+  .main-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .site-footer {
   padding-bottom: 64px;
 }
