@@ -31,13 +31,22 @@
 
 .filtre-form__category{
   padding-bottom: 48px;
-  width: 269px;
 }
 
 .filtre-form__category-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.filtre-form__info-product{
+  display: flex;
+  padding-top: 64px;
+}
+
+.filtre-form__info{
+  width: 25%;
+  margin-right: 32px;
 }
 
 .filtre-form__category-title{
@@ -48,7 +57,6 @@
   line-height: 27px;
   color: #151515;
   margin-bottom: 16px;
-  margin-top: 64px;
 }
 
 .filtre-form__category-name{
@@ -76,3 +84,111 @@
   padding-right: 8px;
 }
 
+.filtre-form__brends{
+  padding-bottom: 48px;
+}
+
+.filtre-form__price{
+  padding-top: 48px;
+  padding-bottom: 10px;
+}
+
+.filtre-form__products{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  padding-bottom: 64px;
+}
+
+.site-main-open-list .filtre-form__products{
+  display: block;
+}
+
+.filtre-form__product-grid{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-grow: 1;
+  display: none;
+}
+.site-main-open-grid .filtre-form__product-grid{
+  display: block;
+  display: inline-flex;
+}
+/* MEDIA */
+
+@include breakpoint-down (1120px) {
+
+  .filtre-form__info{
+    width: 20%;
+  }
+
+  .filtre-form__products{
+    width: 80%;
+  }
+}
+
+
+
+@include breakpoint-down (1100px) {
+
+  .filtre-form__info{
+    display: none;
+  }
+
+  .filtre-form__products{
+    width: 100%;
+
+  }
+}
+
+@include breakpoint-down (915px) {
+
+  .filtre-form__choose{
+    flex-wrap: wrap;
+  }
+
+  .filtre-form__radio{
+    margin-bottom: 15px;
+  }
+
+  .filtre-form__checkbox:not(:last-child){
+    margin-bottom: 15px;
+  }
+}
+
+@include breakpoint-down (825px) {
+
+}
+
+@include breakpoint-down (677px) {
+
+  .filtre-form__checkbox:not(:last-child){
+    margin-bottom: 0px;
+  }
+}
+
+
+@include breakpoint-down (665px) {
+
+  .filtre-form__checkbox:not(:last-child){
+    margin-bottom: 15px;
+  }
+}
+
+
+@include breakpoint-down (465px) {
+
+  .filtre-form__content{
+    flex-wrap: wrap;
+  }
+}
+
+@include breakpoint-down (430px) {
+
+  .filtre-form{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

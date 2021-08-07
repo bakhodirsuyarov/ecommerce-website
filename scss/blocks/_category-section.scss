@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .category-section__title{
@@ -93,3 +94,20 @@
   padding-right: 5px;
 }
 
+
+.category-menu{
+  display: flex;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 64px;
+  padding-top: 64px;
+  flex-wrap: wrap;
+}
+
+@include breakpoint-down (430px) {
+
+  .category-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

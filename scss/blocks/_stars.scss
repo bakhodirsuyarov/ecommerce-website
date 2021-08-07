@@ -1,0 +1,19 @@
+/* STARS */
+.stars-inner{
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+}
+
+.stars-inner__full {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.stars-inner__empty-box,
+.stars-inner__full-box {
+  display: flex;
+}

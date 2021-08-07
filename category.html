@@ -139,7 +139,7 @@
       </div>
     </header>
 
-    <main class="site-main">
+    <main class="site-main site-main-open-list">
 
       <div class="category-section">
         <div class="category-section__content">
@@ -148,11 +148,11 @@
           </h2>
           <div class="category-section__buttons">
             <div class="category-section__button">
-              <button class="category-section__button-one">Grid view</button>
+              <button class="category-section__button-one js-btn-two">Grid view</button>
               <span class="category-section__button-grid"></span>
             </div>
             <div class="category-section__button">
-              <button class="category-section__button-two">List view</button>
+              <button class="category-section__button-two js-btn-one">List view</button>
               <span class="category-section__button-list"></span>
             </div>
             <div class="category-section__number">
@@ -222,60 +222,783 @@
           </div>
         </div>
 
-        <div class="filtre-form__info">
+        <div class="filtre-form__info-product">
+          <div class="filtre-form__info">
 
-          <div class="filtre-form__category">
-          <h2 class="filtre-form__category-title">Categories</h2>
-          <div class="filtre-form__category-content">
-            <p class="filtre-form__category-name">Category name</p>
-            <span class="filtre-form__category-span">320</span>
+            <div class="filtre-form__category">
+              <h2 class="filtre-form__category-title">Categories</h2>
+              <div class="filtre-form__category-content">
+                <p class="filtre-form__category-name">Category name</p>
+                <span class="filtre-form__category-span">320</span>
+              </div>
+              <div class="filtre-form__category-content">
+                <p class="filtre-form__category-name">Category name</p>
+                <span class="filtre-form__category-span">320</span>
+              </div>
+              <div class="filtre-form__category-content">
+                <p class="filtre-form__category-name">Category name</p>
+                <span class="filtre-form__category-span">320</span>
+              </div>
+              <div class="filtre-form__category-content">
+                <p class="filtre-form__category-name">Category name</p>
+                <span class="filtre-form__category-span">320</span>
+              </div>
+            </div>
+
+            <div class="filtre-form__brends brend">
+              <h2 class="brend-title">
+                Brands
+              </h2>
+              <label class="brend-label">
+                <input class="brend-input" type="checkbox" name="check">
+                <span class="brend-span"></span>
+                Filtre by brand item
+              </label>
+              <label class="brend-label">
+                <input class="brend-input" type="checkbox" name="check">
+                <span class="brend-span"></span>
+                Filtre by brand item
+              </label>
+              <label class="brend-label">
+                <input  class="brend-input" type="checkbox" name="check">
+                <span class="brend-span"></span>
+                Filtre by brand item
+              </label>
+              <label class="brend-label">
+                <input  class="brend-input" type="checkbox" name="check">
+                <span class="brend-span"></span>
+                Filtre by brand item
+              </label>
+              <label class="brend-label">
+                <input  class="brend-input" type="checkbox" name="check">
+                <span class="brend-span"></span>
+                Filtre by brand item
+              </label>
+            </div>
+
+            <div class="filtre-form__stars star">
+              <h2 class="star-title">
+                Rating
+              </h2>
+                <label class="star-label">
+                  <input class="star-input" type="checkbox" name="star">
+                  <span class="star-span"></span>
+                  <img class="star-img" src="./img/icon/star.svg" alt="star">
+                </label>
+
+                <label class="star-label">
+                  <input class="star-input" type="checkbox" name="star">
+                  <span class="star-span"></span>
+                  <img class="star-img" src="./img/icon/star2.svg" alt="star" >
+                </label>
+
+                <label class="star-label">
+                  <input class="star-input" type="checkbox" name="star">
+                  <span class="star-span"></span>
+                  <img class="star-img" src="./img/icon/star3.svg" alt="star" >
+                </label>
+
+                <label class="star-label">
+                  <input class="star-input" type="checkbox" name="star">
+                  <span class="star-span"></span>
+                  <img class="star-img" src="./img/icon/star4.svg" alt="star" >
+                </label>
+
+                <label class="star-label">
+                  <input class="star-input" type="checkbox" name="star">
+                  <span class="star-span"></span>
+                  <img class="star-img" src="./img/icon/star5.svg" alt="star" >
+                </label>
+            </div>
+
+            <div class="filtre-form__price price">
+              <h2 class="price-title">
+                Price
+              </h2>
+              <div class="price-buttons">
+                <button class="price-button"></button>
+                <span class="price-button__span"></span>
+                <button class="price-button"></button>
+              </div>
+              <div class="price-label-input">
+                <label class="price-label">
+                  Min
+                  <input class="price-input" type="text" name="name" placeholder="0" autocomplete="off">
+                </label>
+                <label class="price-label">
+                  Max
+                  <input class="price-input" type="text" name="name" placeholder="000" autocomplete="off">
+                </label>
+              </div>
+              <div class="price-button__apply-reset">
+                <button class="price-button__apply">Apply</button>
+                <button class="price-button__reset">Reset</button>
+              </div>
+            </div>
+
           </div>
-          <div class="filtre-form__category-content">
-            <p class="filtre-form__category-name">Category name</p>
-            <span class="filtre-form__category-span">320</span>
+
+          <div class="filtre-form__products product">
+            <div class="product-card">
+              <div class="product-card__img-description">
+                <img class="product-card__img" src="https://picsum.photos/268/280" alt="picture" width="268px" height="280px">
+                <div class="product-card__description">
+                  <h2 class="product-card__description-title">
+                    Product title
+                  </h2>
+                  <p class="product-card__description-text">
+                    Space for a small product description
+                  </p>
+                  <div class="product-card__star stars">
+                    <div class="stars-inner">
+                      <div class="stars-inner__empty">
+                        <div class="stars-inner__empty-box">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                      <div class="stars-inner__full" style="width: 81%;">
+                        <div class="stars-inner__full-box">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="product-card__description-table table" style="width: 100%;">
+                    <tbody class="table-body">
+                      <tr class="table-list">
+                        <th class="table-item">Fresheness</th>
+                        <th class="table-item">Farm</th>
+                        <th class="table-item">Delivery</th>
+                        <th class="table-item">Stock</th>
+                      </tr>
+                      <tr class="table-list">
+                        <td class="table-item">New (Extra fresh)</td>
+                        <td class="table-item">Grocery Tarm Fields</td>
+                        <td class="table-item">Europe</td>
+                        <td class="table-item">320 pcs</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="product-card__detail">
+                <div class="product-card__detail-price-span">
+                  <p class="product-card__detail-price">36.99 USD</p>
+                  <span class="product-card__detail-span">48.56</span>
+                  <span class="product-card__deatil-shipping">Free Shipping</span>
+                  <span class="product-card__detail-delivery">Delivery in 1 day</span>
+                </div>
+                <div class="product-card__detail-btn-add">
+                  <div class="product-card__detail-detail">
+                    <button class="product-card__detail-btn">Product Detail</button>
+                    <span class="product-card__detail-one"></span>
+                  </div>
+                  <div class="product-card__detail-add">
+                    <span class="product-card__detail-two"></span>
+                    <button class="product-card__detail-button">Add to wish list</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__img-description">
+                <img class="product-card__img" src="https://picsum.photos/268/280" alt="picture" width="268px" height="280px">
+                <div class="product-card__description">
+                  <h2 class="product-card__description-title">
+                    Product title
+                  </h2>
+                  <p class="product-card__description-text">
+                    Space for a small product description
+                  </p>
+                  <div class="product-card__star stars">
+                    <div class="stars-inner">
+                      <div class="stars-inner__empty">
+                        <div class="stars-inner__empty-box">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                      <div class="stars-inner__full" style="width: 81%;">
+                        <div class="stars-inner__full-box">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="product-card__description-table table" style="width: 100%;">
+                    <tbody class="table-body">
+                      <tr class="table-list">
+                        <th class="table-item">Fresheness</th>
+                        <th class="table-item">Farm</th>
+                        <th class="table-item">Delivery</th>
+                        <th class="table-item">Stock</th>
+                      </tr>
+                      <tr class="table-list">
+                        <td class="table-item">New (Extra fresh)</td>
+                        <td class="table-item">Grocery Tarm Fields</td>
+                        <td class="table-item">Europe</td>
+                        <td class="table-item">320 pcs</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="product-card__detail">
+                <div class="product-card__detail-price-span">
+                  <p class="product-card__detail-price">36.99 USD</p>
+                  <span class="product-card__detail-span">48.56</span>
+                  <span class="product-card__deatil-shipping">Free Shipping</span>
+                  <span class="product-card__detail-delivery">Delivery in 1 day</span>
+                </div>
+                <div class="product-card__detail-btn-add">
+                  <div class="product-card__detail-detail">
+                    <button class="product-card__detail-btn">Product Detail</button>
+                    <span class="product-card__detail-one"></span>
+                  </div>
+                  <div class="product-card__detail-add">
+                    <span class="product-card__detail-two"></span>
+                    <button class="product-card__detail-button">Add to wish list</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__img-description">
+                <img class="product-card__img" src="https://picsum.photos/268/280" alt="picture" width="268px" height="280px">
+                <div class="product-card__description">
+                  <h2 class="product-card__description-title">
+                    Product title
+                  </h2>
+                  <p class="product-card__description-text">
+                    Space for a small product description
+                  </p>
+                  <div class="product-card__star stars">
+                    <div class="stars-inner">
+                      <div class="stars-inner__empty">
+                        <div class="stars-inner__empty-box">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                      <div class="stars-inner__full" style="width: 81%;">
+                        <div class="stars-inner__full-box">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="product-card__description-table table" style="width: 100%;">
+                    <tbody class="table-body">
+                      <tr class="table-list">
+                        <th class="table-item">Fresheness</th>
+                        <th class="table-item">Farm</th>
+                        <th class="table-item">Delivery</th>
+                        <th class="table-item">Stock</th>
+                      </tr>
+                      <tr class="table-list">
+                        <td class="table-item">New (Extra fresh)</td>
+                        <td class="table-item">Grocery Tarm Fields</td>
+                        <td class="table-item">Europe</td>
+                        <td class="table-item">320 pcs</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="product-card__detail">
+                <div class="product-card__detail-price-span">
+                  <p class="product-card__detail-price">36.99 USD</p>
+                  <span class="product-card__detail-span">48.56</span>
+                  <span class="product-card__deatil-shipping">Free Shipping</span>
+                  <span class="product-card__detail-delivery">Delivery in 1 day</span>
+                </div>
+                <div class="product-card__detail-btn-add">
+                  <div class="product-card__detail-detail">
+                    <button class="product-card__detail-btn">Product Detail</button>
+                    <span class="product-card__detail-one"></span>
+                  </div>
+                  <div class="product-card__detail-add">
+                    <span class="product-card__detail-two"></span>
+                    <button class="product-card__detail-button">Add to wish list</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-card__img-description">
+                <img class="product-card__img" src="https://picsum.photos/268/280" alt="picture" width="268px" height="280px">
+                <div class="product-card__description">
+                  <h2 class="product-card__description-title">
+                    Product title
+                  </h2>
+                  <p class="product-card__description-text">
+                    Space for a small product description
+                  </p>
+                  <div class="product-card__star stars">
+                    <div class="stars-inner">
+                      <div class="stars-inner__empty">
+                        <div class="stars-inner__empty-box">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                      <div class="stars-inner__full" style="width: 81%;">
+                        <div class="stars-inner__full-box">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                          <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="product-card__description-table table" style="width: 100%;">
+                    <tbody class="table-body">
+                      <tr class="table-list">
+                        <th class="table-item">Fresheness</th>
+                        <th class="table-item">Farm</th>
+                        <th class="table-item">Delivery</th>
+                        <th class="table-item">Stock</th>
+                      </tr>
+                      <tr class="table-list">
+                        <td class="table-item">New (Extra fresh)</td>
+                        <td class="table-item">Grocery Tarm Fields</td>
+                        <td class="table-item">Europe</td>
+                        <td class="table-item">320 pcs</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="product-card__detail">
+                <div class="product-card__detail-price-span">
+                  <p class="product-card__detail-price">36.99 USD</p>
+                  <span class="product-card__detail-span">48.56</span>
+                  <span class="product-card__deatil-shipping">Free Shipping</span>
+                  <span class="product-card__detail-delivery">Delivery in 1 day</span>
+                </div>
+                <div class="product-card__detail-btn-add">
+                  <div class="product-card__detail-detail">
+                    <button class="product-card__detail-btn">Product Detail</button>
+                    <span class="product-card__detail-one"></span>
+                  </div>
+                  <div class="product-card__detail-add">
+                    <span class="product-card__detail-two"></span>
+                    <button class="product-card__detail-button">Add to wish list</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="filtre-form__category-content">
-            <p class="filtre-form__category-name">Category name</p>
-            <span class="filtre-form__category-span">320</span>
+
+          <div class="filtre-form__product-grid grid">
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__img-span">
+                <img class="grid-card__img" src="https://picsum.photos/236/180" alt="img" width="236px" height="180px">
+                <span class="grid-card__span">-36%</span>
+              </div>
+              <div class="grid-card__info">
+                <h2 class="grid-card__title">Product title</h2>
+                <p class="grid-card__description">Space for a small product description</p>
+                <div class="product-card__star stars">
+                  <div class="stars-inner">
+                    <div class="stars-inner__empty">
+                      <div class="stars-inner__empty-box">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-empty.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                    <div class="stars-inner__full" style="width: 81%;">
+                      <div class="stars-inner__full-box">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                        <img class="stars-inner__img" src="./img/icon/star-full.svg" alt="star" width="16px" height="16px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-card__price-span">
+                  <div>
+                    <p class="grid-card__price">36.99 USD</p>
+                    <span class="grid-card__number">48.56</span>
+                  </div>
+                  <button class="grid-card__button">Buy now</button>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="filtre-form__category-content">
-            <p class="filtre-form__category-name">Category name</p>
-            <span class="filtre-form__category-span">320</span>
-          </div>
-
-          <!-- <div class="filtre-form__brends brend">
-            <h2 class="brend-title">
-              Brands
-            </h2>
-            <label class="brend-label">
-              <input class="brend-input" type="checkbox" name="check">
-              Filtre by brand item
-            </label>
-            <label class="brend-label">
-              <input class="brendi-input" type="checkbox" name="check">
-              Filtre by brand item
-            </label>
-            <label class="brend-label">
-              <input  class="brendi-input" type="checkbox" name="check">
-              Filtre by brand item
-            </label>
-            <label class="brend-label">
-              <input  class="brendi-input" type="checkbox" name="check">
-              Filtre by brand item
-            </label>
-            <label class="brend-label">
-              <input  class="brendi-input" type="checkbox" name="check">
-              Filtre by brand item
-            </label>
-          </div> -->
-
-        </div>
-
-
         </div>
 
       </form>
 
+
+      <div class="main-bottom">
+        <p class="main-bottom__page">Page: 1 2 3 4</p>
+        <div>
+          <button class="main-bottom__button">Show more products</button>
+          <span class="main-bottom__button-span"></span>
+        </div>
+        <div class="main-bottom__product">
+          <span class="main-bottom__span">336</span>
+          <p class="main-bottom__text">Products</p>
+        </div>
+      </div>
     </main>
 
 
@@ -349,6 +1072,27 @@
       </section>
     </footer>
   </div>
+
+  <section class="search-modal">
+    <h2 class="visually-hidden">find as</h2>
+    <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="POST">
+
+      <select class="search-modal__selection" name="select" id="select_modal">
+        <option value="" disabled selected>All categories</option>
+        <option value="bakery">Bakery</option>
+        <option value="fruit">Fruit</option>
+        <option value="meat">Meat</option>
+        <option value="fish">Fish</option>
+        <option value="drinks">Drinks</option>
+        <option value="kitchen">Kitchen</option>
+      </select>
+
+      <input class="search-modal__search" type="text" name="search_products" id="search_modal" placeholder="Search Products, categories ...">
+
+      <button class="search-modal__submit" type="submit"></button>
+
+    </form>
+  </section>
 
   <script src="/js/main.js"></script>
 </body>

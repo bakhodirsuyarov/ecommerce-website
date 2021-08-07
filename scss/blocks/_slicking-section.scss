@@ -1,0 +1,23 @@
+/* SLICK */
+.slicking-section{
+  padding-left: 45px;
+  padding-right: 45px;
+  overflow: hidden;
+}
+
+.slicking-section__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slicking-section__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.slicking-section__item{
+  text-align: center;
+}
